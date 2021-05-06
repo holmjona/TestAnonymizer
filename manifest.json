@@ -6,7 +6,11 @@
     "description": "Removes the student names from the grading form so that you can grade questions without being biased by who answered.",
   
     "icons": {
-      "48": "icons/border-48.png"
+      "16": "icons/anon-16.png",
+      "32": "icons/anon-32.png",
+      "48": "icons/anon-48.png",
+      "64": "icons/anon-64.png",
+      "128": "icons/anon-128.png"
     },
   
     "content_scripts": [

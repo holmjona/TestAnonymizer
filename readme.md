@@ -13,7 +13,7 @@ This addon does two things to help with this approach.
 ## Loading the Addon
 To use this addon, download the code to a folder on your computer.
 
-1. In Firefox, type `about:debugging` in the address bar. This will bring up the Firefox debugging settings.
+1. In the Firefox address bar, type `about:debugging` . This will bring up the Firefox debugging settings.
 2. Find the **This Firefox** section and make sure it is selected. 
 3. Click the **Load Temporary Addon** button. 
 4. When the Open File Dialog opens, select and "open" any file in the folder where you downloaded these files. (I normally just "open" the manifest.json file.)
