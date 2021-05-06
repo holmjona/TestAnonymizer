@@ -66,10 +66,14 @@ if (anonymH4sFound) {
     var fieldDivs = document.getElementsByClassName("fcontainer");
     for (let fdv of fieldDivs) {
         let items = fdv.getElementsByClassName("fitem");
-        // first item is comments  // second is points
-        let dv = items[0];
-        dv.style.display = "none";
-        fdv.insertBefore(getButton("Comments"), dv);
+        let htmlEditor = fdv.getElementsByClassName("fhtmleditor");
+        // only use when field set contains html editor.
+        if (htmlEditor.length > 0) {
+            // first item is comments  // second is points
+            let dv = items[0];
+            dv.style.display = "none";
+            fdv.insertBefore(getButton("Comments"), dv);
+        }
     }
 
 
@@ -98,10 +102,10 @@ function toggleVisibilityClick(evt) {
 function getButton(nameToToggle) {
     let btn = document.createElement("button");
     // use span for toggle word
-    btn.innerHTML = "<span class='actionText'>Show</span> " 
-        + nameToToggle 
+    btn.innerHTML = "<span class='actionText'>Show</span> "
+        + nameToToggle
         + " <span class='directionIcon'>&#9654;</span>";
-        //&#8651;
+    //&#8651;
     btn.onclick = toggleVisibilityClick;
     btn.style.backgroundColor = "#EFE";
     return btn;
